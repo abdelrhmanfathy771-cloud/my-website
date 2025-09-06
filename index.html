@@ -1,42 +1,21 @@
-from PIL import Image, ImageDraw, ImageFont
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>موقعي الأول</title>
+  <!-- ربط ملف CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>أهلا بيك في موقعي 🎉</h1>
+    <p>ده أول موقع أعمله بنفسي!</p>
+    <a href="#" class="btn">اضغط هنا</a>
+  </header>
 
-# إنشاء صورة للمقارنة (قبل وبعد CSS)
-w, h = 1000, 600
-img = Image.new("RGB", (w, h), "white")
-draw = ImageDraw.Draw(img)
-
-# محاولة تحميل خط
-try:
-    font_title = ImageFont.truetype("DejaVuSans-Bold.ttf", 36)
-    font_text = ImageFont.truetype("DejaVuSans.ttf", 22)
-except:
-    font_title = ImageFont.load_default()
-    font_text = ImageFont.load_default()
-
-# ---------------- BEFORE (بدون CSS) -----------------
-draw.rectangle([0, 0, w//2, h], fill="white")
-
-draw.text((80, 60), "موقعي الأول", font=font_title, fill="black")
-draw.text((80, 140), "ده أول موقع أعمله بنفسي!", font=font_text, fill="black")
-
-draw.text((180, 500), "قبل (بدون CSS)", font=font_text, fill="gray")
-
-# ---------------- AFTER (مع CSS) -----------------
-draw.rectangle([w//2, 0, w, h], fill=(244, 247, 251))  # خلفية رمادي فاتح
-
-# عنوان أزرق
-draw.text((w//2+80, 60), "موقعي الأول", font=font_title, fill="#0b66d1")
-# نص غامق
-draw.text((w//2+80, 140), "ده أول موقع أعمله بنفسي!", font=font_text, fill="#222")
-
-# زر تجريبي
-btn_x, btn_y = w//2+80, 220
-draw.rectangle([btn_x, btn_y, btn_x+200, btn_y+50], outline="#0b66d1", width=2)
-draw.text((btn_x+20, btn_y+10), "اضغط هنا", font=font_text, fill="#0b66d1")
-
-draw.text((w//2+180, 500), "بعد (مع CSS)", font=font_text, fill="gray")
-
-# حفظ الصورة
-out_path = "/mnt/data/before-after-css.png"
-img.save(out_path)
-out_path
+  <div class="container">
+    <h2>عن الموقع</h2>
+    <p>ده مجرد تجربة بسيطة لإني بتعلم أعمل مواقع بنفسي.</p>
+  </div>
+</body>
+</html>
