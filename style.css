@@ -1,0 +1,39 @@
+/* ملف style.css — انسخه كله والصقه هنا */
+body {
+  background-color: #f4f7fb;
+  font-family: "Tahoma", "Arial", sans-serif;
+  color: #222;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  padding: 40px 20px;
+  background: white;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.06);
+}
+
+h1 {
+  color: #0b66d1;
+  margin: 0 0 8px;
+  font-size: 32px;
+}
+
+p { color: #444; font-size: 18px; line-height: 1.6; }
+
+a.btn {
+  display: inline-block;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  text-decoration: none;
+  color: #0b66d1;
+  margin-top: 12px;
+}
