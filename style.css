@@ -1,39 +1,38 @@
-/* ملف style.css — انسخه كله والصقه هنا */
-body {
-  background-color: #f4f7fb;
-  font-family: "Tahoma", "Arial", sans-serif;
-  color: #222;
-  margin: 0;
-  padding: 0;
-  text-align: center;
+/* style.css — أساسيات التصميم */
+*{box-sizing:border-box}
+body{
+  font-family: Tahoma, Arial, sans-serif;
+  background:#f5f8fb;
+  color:#222;
+  margin:0;
+  line-height:1.6;
 }
+.container{max-width:1000px;margin:20px auto;padding:0 20px}
 
-.container {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 20px;
+/* Header */
+header{
+  background: linear-gradient(90deg,#0072ff,#00c6ff);
+  color:#fff;
+  text-align:center;
+  padding:60px 20px;
 }
-
-header {
-  padding: 40px 20px;
-  background: white;
-  box-shadow: 0 1px 0 rgba(0,0,0,0.06);
+.header-inner h1{font-size:36px;margin:0}
+.subtitle{margin-top:8px;font-size:18px;opacity:.95}
+.btn{
+  display:inline-block;margin-top:16px;padding:10px 18px;background:#fff;color:#0072ff;border-radius:6px;text-decoration:none;font-weight:bold;
 }
+.btn:hover{opacity:.9}
 
-h1 {
-  color: #0b66d1;
-  margin: 0 0 8px;
-  font-size: 32px;
-}
+/* Navigation */
+.topnav{display:flex;justify-content:center;gap:12px;padding:12px 0}
+.topnav a{text-decoration:none;color:#0072ff;font-weight:600}
 
-p { color: #444; font-size: 18px; line-height: 1.6; }
+/* Sections */
+.services ul{list-style:disc;padding-right:20px}
+.services h2,h2{color:#0072ff;margin-bottom:12px}
 
-a.btn {
-  display: inline-block;
-  padding: 10px 14px;
-  border-radius: 8px;
-  border: 1px solid #ddd;
-  text-decoration: none;
-  color: #0b66d1;
-  margin-top: 12px;
-}
+/* Containers look */
+.container{background:#fff;border-radius:8px;padding:20px;box-shadow:0 2px 6px rgba(0,0,0,0.06);margin-bottom:20px}
+
+/* Footer */
+footer{background:#0072ff;color:#fff;text-align:center;padding:14px 0}
