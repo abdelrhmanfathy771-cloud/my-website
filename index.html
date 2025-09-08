@@ -1,21 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <title>موقعي الأول</title>
-  <!-- ربط ملف CSS -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>صيدلية الأمل</title>
+  <meta name="description" content="صيدلية الأمل - لصرف الروشتات، استشارات دوائية، توصيل للمنازل.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <header>
-    <h1>أهلا بيك في موقعي 🎉</h1>
-    <p>ده أول موقع أعمله بنفسي!</p>
-    <a href="#" class="btn">اضغط هنا</a>
+    <div class="container header-inner">
+      <h1>صيدلية الأمل</h1>
+      <p class="subtitle">خدمات دوائية وصحية — توصيل للمنازل</p>
+      <a href="#contact" class="btn">اتصل بنا</a>
+    </div>
   </header>
 
-  <div class="container">
-    <h2>عن الموقع</h2>
-    <p>انا بحبك يا ايمي.</p>
-  </div>
+  <nav class="topnav container">
+    <a href="index.html">الرئيسية</a>
+    <a href="about.html">عن الصيدلية</a>
+    <a href="contact.html">اتصل بنا</a>
+  </nav>
+
+  <main>
+    <section class="container services" id="services">
+      <h2>خدماتنا</h2>
+      <ul>
+        <li>صرف الروشتات الطبية</li>
+        <li>استشارات دوائية مجانية</li>
+        <li>منتجات تجميل وعناية شخصية</li>
+        <li>توصيل سريع للمنازل</li>
+      </ul>
+    </section>
+
+    <section class="container" id="about-short">
+      <h2>لماذا تختارنا؟</h2>
+      <p>فريق صيدلي مؤهل، منتجات أصلية، وخدمة توصيل سريعة. نراعي خصوصيتك ونقدم نصائح دوائية مبسطة.</p>
+    </section>
+
+    <section class="container contact-short" id="contact">
+      <h2>تواصل معنا</h2>
+      <p>📞 0100-123-4567</p>
+      <p>💬 واتساب: <a href="https://wa.me/201001234567" target="_blank">اضغط هنا</a></p>
+      <p>📍 <a href="https://goo.gl/maps/xxxxxxx" target="_blank">الموقع على الخريطة</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 - صيدلية الأمل. جميع الحقوق محفوظة.</p>
+    </div>
+  </footer>
+
 </body>
 </html>
